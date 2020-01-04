@@ -9,5 +9,8 @@
 import UIKit
 
 class productCell: UICollectionViewCell {
-    
+    override func awakeFromNib() {
+        self.layer.cornerRadius = 5
+        self.layer.masksToBounds = true
+    }
 }
